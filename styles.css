@@ -1,0 +1,179 @@
+/* styles.css */
+/* Root Variables */
+:root {
+  --primary-color: #666565;
+  --secondary-color: #666666;
+  --background-color: #212121;
+  --text-color: #fff;
+  --nav-color: #333;
+  --nav-icon-color: #50a4ee;
+  --list-icon-color:#20b025;;
+}
+
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--nav-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav li {
+  margin-right: 20px;
+}
+
+#nav a {
+  color: var(--nav-icon-color);
+  text-decoration: none;
+}
+
+#nav a:hover {
+  color: var(--text-color);
+}
+
+/* Navigation Menu Icon */
+#nav .nav-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Navigation Menu Icon (Open) */
+#nav .nav-icon.open {
+  transform: rotate(180deg);
+}
+
+/* Navigation Menu Icon (Close) */
+#nav .nav-icon.close {
+  transform: rotate(0deg);
+}
+
+/* Main Content Styles */
+#main {
+  margin-top: 4rem;
+}
+
+#main section {
+  padding: 2rem;
+}
+
+#main h1, #main h2, #main h3 {
+  color: var(--primary-color);
+}
+
+#main p {
+  color: var(--text-color);
+}
+
+/* Gallery Grid Styles */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.gallery-grid-item {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth transition for the transform property */
+}
+
+.gallery-grid-item img:hover {
+  transform: scale(1.05); /* Slightly increase the size of the image on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* cards */
+/* List of Items Styles */
+.list-of-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-of-items li {
+  margin-bottom: 10px;
+  padding: 10px;
+ 
+  border-radius: 5px;
+  background-color: var(--background-color)
+}
+
+.list-of-items li:last-child {
+  border-bottom: none;
+}
+
+.list-of-items .tick-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color:var(--list-icon-color);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+/* Responsive Design Styles */
+@media (max-width: 768px) {
+  .list-of-items {
+    flex-direction: column;
+    margin-left: 20px;
+    
+  }
+}
+
+@media (max-width: 480px) {
+  .list-of-items {
+    font-size: 14px;
+  }
+}
+
+#contact a {
+  color: #fff;
+  margin-left: 10px;
+}
