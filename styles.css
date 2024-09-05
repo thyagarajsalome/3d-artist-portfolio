@@ -86,7 +86,7 @@ h2 {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
+  gap: 0.3rem;
   margin-top: 1rem;
 }
 
