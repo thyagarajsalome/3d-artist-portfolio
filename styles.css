@@ -81,13 +81,6 @@ h2 {
   color: var(--accent-color);
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.skill-btn:hover {
-  background-color: var(--accent-color);
-  color: var(--bg-color);
 }
 
 .gallery-grid {
