@@ -13,51 +13,6 @@ body {
   padding: 0;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: rgba(10, 25, 47, 0.8);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--accent-color);
-}
-
-nav ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
-  margin-left: 1rem;
-}
-
-nav ul li a {
-  color: var(--text-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: var(--accent-color);
-}
-
-.menu-icon,
-.close-icon {
-  display: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
 main {
   padding: 2rem;
   margin-top: 60px;
@@ -165,10 +120,10 @@ h2 {
 }
 
 #stat1 {
-  color: #9d4edd;
+  color: #48d1cc;
 }
 #stat2 {
-  color: #48d1cc;
+  color: #ffa500;
 }
 #stat3 {
   color: #ff69b4;
