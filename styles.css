@@ -115,6 +115,7 @@ h2 {
 }
 
 .stat-label {
+  line-height: 2;
   font-size: 1em;
   color: #8a8a8a;
 }
@@ -210,8 +211,84 @@ h2 {
 }
 
 .material-icons {
-  color: darkgoldenrod;
+  color: var(--secondary-color);
   display: inline;
-
   text-align: center;
+}
+
+/* nav bar */
+nav {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: #004274; */
+  position: relative;
+  height: 70px;
+}
+
+.logo {
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-icon i {
+  color: #fff;
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #004274;
+    gap: 0;
+    overflow: hidden;
+  }
+  nav ul li {
+    padding: 20px;
+    /* padding-top: 0; */
+  }
+  .menu-icon {
+    display: block;
+  }
+  #menuList {
+    transition: all 0.5s;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .stat-box {
+    display: none;
+  }
+}
+
+footer {
+  text-align: center;
+}
+
+section {
+  margin-top: 20px;
 }

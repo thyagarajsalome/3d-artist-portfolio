@@ -15,6 +15,20 @@
     />
   </head>
   <body>
+    <nav>
+      <div class="logo">
+        <h1>TM</h1>
+      </div>
+      <ul id="menuList">
+        <li><a href="#">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
     <main>
       <section id="home">
         <h1>Welcome to My Portfolio</h1>
@@ -26,11 +40,15 @@
       <div class="container">
         <div class="stat-box">
           <div id="stat1" class="stat-number">3D Artist</div>
-          <div class="stat-label">Architectrual, Product Design</div>
+          <div class="stat-label">
+            Architectural, Interior, Home design, Lighting, Product design
+          </div>
         </div>
         <div class="stat-box">
-          <div id="stat2" class="stat-number">Frontend developer</div>
-          <div class="stat-label">Web developer, programmer</div>
+          <div id="stat2" class="stat-number">Frontend</div>
+          <div class="stat-label">
+            Web developer, programmer, Web app, Software, three.js
+          </div>
         </div>
       </div>
 
@@ -251,6 +269,21 @@
       <p>&copy; 2024 3D Artist Portfolio. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+      let menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "300px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/f8e1a90484.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
