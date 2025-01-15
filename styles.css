@@ -321,3 +321,135 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* hero images */
+
+/* body {
+  background: #191919;
+} */
+.gallery {
+  width: 1200px;
+  display: flex;
+  overflow-x: scroll;
+}
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+.gallery div img {
+  width: 100%;
+  filter: grayscale(100%);
+  transition: transform 0.5s;
+}
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+#backBtn,
+#nextBtn {
+  width: 50px;
+  cursor: pointer;
+  margin: 40px;
+}
+.gallery div img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Responsive */
+
+/* Tablet Styles */
+@media screen and (max-width: 768px) {
+  .gallery div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    padding: 8px;
+  }
+
+  #backBtn,
+  #nextBtn {
+    width: 40px;
+    margin: 0 15px;
+  }
+
+  .gallery-wrap {
+    margin: 4% auto;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
+  .gallery {
+    width: 100%;
+  }
+
+  .gallery div {
+    grid-template-columns: 1fr;
+    grid-gap: 12px;
+    padding: 3px;
+  }
+
+  .gallery div img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 4/5;
+  }
+
+  #backBtn,
+  #nextBtn {
+    width: 40px;
+    margin: 0 10px;
+  }
+
+  .gallery-wrap {
+    margin: 3% auto;
+    padding: 0 10px;
+  }
+
+  /* Disable hover effects on mobile */
+  .gallery div img:hover {
+    transform: none;
+    filter: none;
+  }
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 320px) {
+  .gallery div {
+    grid-gap: 8px;
+    padding: 4px;
+  }
+
+  .gallery-wrap {
+    margin: 2% auto;
+    padding: 0 5px;
+  }
+
+  #backBtn,
+  #nextBtn {
+    width: 25px;
+    margin: 0 8px;
+  }
+}
+
+/* Touch Device Optimization */
+@media (hover: none) {
+  .gallery div img {
+    filter: none;
+  }
+
+  .gallery div img:hover {
+    transform: none;
+  }
+}
