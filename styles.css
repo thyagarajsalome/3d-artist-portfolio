@@ -115,7 +115,7 @@ h2 {
 
 /* Home Section */
 #home {
-  min-height: 50vh;
+  min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,7 +123,7 @@ h2 {
 }
 
 .hero-content {
-  max-width: 800px;
+  max-width: 1200px;
   text-align: center;
   animation: fadeInUp 1s ease forwards;
 }
