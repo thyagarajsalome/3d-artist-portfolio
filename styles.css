@@ -141,7 +141,7 @@ h2 {
 
 /* Stats Section */
 .container {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
@@ -188,7 +188,7 @@ h2 {
 
 .skill-btn {
   background: transparent;
-  border: 2px solid var(--accent-color);
+  border: 1px solid rgba(128, 128, 128, 0.56);
   color: var(--accent-color);
   padding: 1rem;
   border-radius: 10px;
@@ -279,6 +279,7 @@ footer {
   }
 
   nav ul {
+    gap: 80px;
     position: fixed;
     top: 0;
     right: -100%;
@@ -303,7 +304,7 @@ footer {
   }
 
   section {
-    padding: 4rem 1rem;
+    padding: 1rem 1rem;
   }
 }
 
