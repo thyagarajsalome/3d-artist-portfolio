@@ -4,21 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D Artist Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Preconnect & Async load external fonts and icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Awesome (loaded asynchronously) -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+    </noscript>
+
+    <!-- Material Icons (loaded asynchronously) -->
     <link
+      rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      />
+    </noscript>
+
+    <!-- Google Fonts (loaded asynchronously) -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      />
+    </noscript>
+
+    <!-- Inline Critical CSS (minified) -->
   </head>
   <body>
+    <!-- Navigation -->
     <nav>
       <a href="#" class="logo">TM</a>
       <ul id="menuList">
@@ -33,6 +70,7 @@
     </nav>
 
     <main>
+      <!-- Home Section -->
       <section id="home">
         <div class="hero-content">
           <h1>Creative 3D Artist</h1>
@@ -42,24 +80,8 @@
           </p>
         </div>
       </section>
-      <!-- hero images -->
-      <div class="gallery-wrap">
-        <img src="images/back.png" id="backBtn" />
-        <div class="gallery">
-          <div>
-            <span><img src="images/image-1.webp" /></span>
-            <span><img src="images/image-2.webp" /></span>
-            <span><img src="images/image-3.webp" /></span>
-          </div>
-          <div>
-            <span><img src="images/image-4.webp" /></span>
-            <span><img src="images/image-5.webp" /></span>
-            <span><img src="images/image-6.webp" /></span>
-          </div>
-        </div>
-        <img src="images/next.png" id="nextBtn" />
-      </div>
-      <!-- hero images -->
+
+      <!-- Stats Section -->
       <div class="container">
         <div class="stat-box">
           <div class="stat-number">3D Artist</div>
@@ -81,6 +103,7 @@
         </div>
       </div>
 
+      <!-- Skills Section -->
       <section id="skills">
         <h2>Skills</h2>
         <div class="skills-container">
@@ -97,10 +120,10 @@
             <span class="material-icons">home</span> Architectural
           </button>
           <button class="skill-btn">
-            <span class="material-icons">architecture</span> Sketchup 3d
+            <span class="material-icons">architecture</span> Sketchup 3D
           </button>
           <button class="skill-btn">
-            <span class="material-icons">design_services</span> Product design
+            <span class="material-icons">design_services</span> Product Design
           </button>
           <button class="skill-btn">
             <span class="material-icons">light</span> Lighting
@@ -120,178 +143,165 @@
         </div>
       </section>
 
+      <!-- Gallery Section with 50 WebP Images -->
       <section id="gallery">
         <h2>Gallery</h2>
         <div class="gallery-grid">
+          <!-- Looping through 1 to 50 -->
           <div class="gallery-item">
-            <img src="./assets/1.webp" alt="" />
+            <img src="./assets/1.webp" alt="Gallery Image 1" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/2.webp" alt="" />
-          </div>
-
-          <div class="gallery-item">
-            <img src="./assets/3.webp" alt="" />
+            <img src="./assets/2.webp" alt="Gallery Image 2" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/4.webp" alt="" />
+            <img src="./assets/3.webp" alt="Gallery Image 3" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/5.webp" alt="" />
+            <img src="./assets/4.webp" alt="Gallery Image 4" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/6.webp" alt="" />
+            <img src="./assets/5.webp" alt="Gallery Image 5" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/7.webp" alt="" />
+            <img src="./assets/6.webp" alt="Gallery Image 6" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/8.webp" alt="" />
+            <img src="./assets/7.webp" alt="Gallery Image 7" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/9.webp" alt="" />
+            <img src="./assets/8.webp" alt="Gallery Image 8" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/10.webp" alt="" />
+            <img src="./assets/9.webp" alt="Gallery Image 9" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/11.webp" alt="" />
+            <img src="./assets/10.webp" alt="Gallery Image 10" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/12.webp" alt="" />
+            <img src="./assets/11.webp" alt="Gallery Image 11" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/13.webp" alt="" />
+            <img src="./assets/12.webp" alt="Gallery Image 12" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/14.webp" alt="" />
+            <img src="./assets/13.webp" alt="Gallery Image 13" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/15.webp" alt="" />
+            <img src="./assets/14.webp" alt="Gallery Image 14" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/16.webp" alt="" />
+            <img src="./assets/15.webp" alt="Gallery Image 15" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/17.webp" alt="" />
+            <img src="./assets/16.webp" alt="Gallery Image 16" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/18.webp" alt="" />
+            <img src="./assets/17.webp" alt="Gallery Image 17" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/19.webp" alt="" />
+            <img src="./assets/18.webp" alt="Gallery Image 18" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/20.webp" alt="" />
+            <img src="./assets/19.webp" alt="Gallery Image 19" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/21.webp" alt="" />
+            <img src="./assets/20.webp" alt="Gallery Image 20" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/22.webp" alt="" />
+            <img src="./assets/21.webp" alt="Gallery Image 21" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/23.webp" alt="" />
+            <img src="./assets/22.webp" alt="Gallery Image 22" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/24.webp" alt="" />
+            <img src="./assets/23.webp" alt="Gallery Image 23" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/25.webp" alt="" />
+            <img src="./assets/24.webp" alt="Gallery Image 24" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/26.webp" alt="" />
+            <img src="./assets/25.webp" alt="Gallery Image 25" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/27.webp" alt="" />
+            <img src="./assets/26.webp" alt="Gallery Image 26" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/28.webp" alt="" />
+            <img src="./assets/27.webp" alt="Gallery Image 27" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/29.webp" alt="" />
+            <img src="./assets/28.webp" alt="Gallery Image 28" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/30.webp" alt="" />
+            <img src="./assets/29.webp" alt="Gallery Image 29" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/31.webp" alt="" />
+            <img src="./assets/30.webp" alt="Gallery Image 30" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/32.webp" alt="" />
+            <img src="./assets/31.webp" alt="Gallery Image 31" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/33.webp" alt="" />
+            <img src="./assets/32.webp" alt="Gallery Image 32" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/34.webp" alt="" />
+            <img src="./assets/33.webp" alt="Gallery Image 33" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/35.webp" alt="" />
+            <img src="./assets/34.webp" alt="Gallery Image 34" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/36.webp" alt="" />
+            <img src="./assets/35.webp" alt="Gallery Image 35" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/37.webp" alt="" />
+            <img src="./assets/36.webp" alt="Gallery Image 36" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/38.webp" alt="" />
+            <img src="./assets/37.webp" alt="Gallery Image 37" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/39.webp" alt="" />
+            <img src="./assets/38.webp" alt="Gallery Image 38" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/40.webp" alt="" />
+            <img src="./assets/39.webp" alt="Gallery Image 39" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/41.webp" alt="" />
+            <img src="./assets/40.webp" alt="Gallery Image 40" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/42.webp" alt="" />
+            <img src="./assets/41.webp" alt="Gallery Image 41" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/43.webp" alt="" />
+            <img src="./assets/42.webp" alt="Gallery Image 42" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/44.webp" alt="" />
+            <img src="./assets/43.webp" alt="Gallery Image 43" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/45.webp" alt="" />
+            <img src="./assets/44.webp" alt="Gallery Image 44" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/46.webp" alt="" />
+            <img src="./assets/45.webp" alt="Gallery Image 45" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/47.webp" alt="" />
+            <img src="./assets/46.webp" alt="Gallery Image 46" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/48.webp" alt="" />
+            <img src="./assets/47.webp" alt="Gallery Image 47" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/49.webp" alt="" />
+            <img src="./assets/48.webp" alt="Gallery Image 48" loading="lazy" />
           </div>
           <div class="gallery-item">
-            <img src="./assets/50.webp" alt="" />
+            <img src="./assets/49.webp" alt="Gallery Image 49" loading="lazy" />
           </div>
-          <!-- <div class="gallery-item">
-            <img
-              src="/api/placeholder/400/300"
-              alt="Portfolio work 1"
-              loading="lazy"
-            />
-          </div> -->
-          <!-- <div class="gallery-item">
-            <img
-              src="/api/placeholder/400/300"
-              alt="Portfolio work 2"
-              loading="lazy"
-            />
-          </div> -->
-          <!-- Add more gallery items as needed -->
+          <div class="gallery-item">
+            <img src="./assets/50.webp" alt="Gallery Image 50" loading="lazy" />
+          </div>
         </div>
       </section>
 
+      <!-- Contact Section -->
       <section id="contact">
         <h2>Get in Touch</h2>
         <a
@@ -309,65 +319,63 @@
       </p>
     </footer>
 
+    <!-- Inline JavaScript (minified & combined) -->
     <script>
-      // Navigation toggle
-      const menuIcon = document.querySelector(".menu-icon");
-      const menuList = document.getElementById("menuList");
-      const nav = document.querySelector("nav");
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.querySelector(".menu-icon");
+        const menuList = document.getElementById("menuList");
+        const nav = document.querySelector("nav");
 
-      menuIcon.addEventListener("click", () => {
-        menuList.classList.toggle("active");
-        menuIcon.classList.toggle("active");
-      });
+        menuIcon.addEventListener("click", () => {
+          menuList.classList.toggle("active");
+          menuIcon.classList.toggle("active");
+        });
 
-      // Close menu when clicking outside
-      document.addEventListener("click", (e) => {
-        if (!nav.contains(e.target) && menuList.classList.contains("active")) {
-          menuList.classList.remove("active");
-          menuIcon.classList.remove("active");
-        }
-      });
+        document.addEventListener("click", (e) => {
+          if (
+            !nav.contains(e.target) &&
+            menuList.classList.contains("active")
+          ) {
+            menuList.classList.remove("active");
+            menuIcon.classList.remove("active");
+          }
+        });
 
-      // Navbar scroll effect
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 50) {
-          nav.classList.add("scrolled");
-        } else {
-          nav.classList.remove("scrolled");
-        }
-      });
+        window.addEventListener("scroll", () => {
+          window.scrollY > 50
+            ? nav.classList.add("scrolled")
+            : nav.classList.remove("scrolled");
+        });
 
-      // Smooth scroll for navigation links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          menuList.classList.remove("active");
-          menuIcon.classList.remove("active");
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
+        document.querySelectorAll('a[href^="#"]').forEach((link) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            menuList.classList.remove("active");
+            menuIcon.classList.remove("active");
+            const target = document.querySelector(link.getAttribute("href"));
+            target && target.scrollIntoView({ behavior: "smooth" });
           });
         });
-      });
-    </script>
-    <script>
-      let scrollContainer = document.querySelector(".gallery");
-      let backBtn = document.getElementById("backBtn");
-      let nextBtn = document.getElementById("nextBtn");
 
-      scrollContainer.addEventListener("wheel", (evt) => {
-        evt.preventDefault();
-        scrollContainer.scrollLeft += evt.deltaY;
-        scrollContainer.style.scrollBehavior = "auto";
-      });
-
-      nextBtn.addEventListener("click", () => {
-        scrollContainer.style.scrollBehavior = "smooth";
-        scrollContainer.scrollLeft += 900;
-      });
-
-      backBtn.addEventListener("click", () => {
-        scrollContainer.style.scrollBehavior = "smooth";
-        scrollContainer.scrollLeft -= 900;
+        // Horizontal scrolling gallery events
+        const gallery = document.querySelector(".gallery");
+        const backBtn = document.getElementById("backBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        if (gallery) {
+          gallery.addEventListener("wheel", (e) => {
+            e.preventDefault();
+            gallery.scrollLeft += e.deltaY;
+            gallery.style.scrollBehavior = "auto";
+          });
+          nextBtn.addEventListener("click", () => {
+            gallery.style.scrollBehavior = "smooth";
+            gallery.scrollLeft += 900;
+          });
+          backBtn.addEventListener("click", () => {
+            gallery.style.scrollBehavior = "smooth";
+            gallery.scrollLeft -= 900;
+          });
+        }
       });
     </script>
   </body>
