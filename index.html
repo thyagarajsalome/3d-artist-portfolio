@@ -57,7 +57,7 @@
   <body>
     <!-- Navigation -->
     <nav>
-      <a href="#" class="logo">TM</a>
+      <a href="#" class="logo">Portfolio</a>
       <ul id="menuList">
         <li><a href="#home">Home</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -73,7 +73,7 @@
       <!-- Home Section -->
       <section id="home">
         <div class="hero-content">
-          <h1>Architectural & Creative 3D Artist</h1>
+          <h1>Sr. 3D Artist & Designer</h1>
           <p>
             Crafting immersive digital experiences through architectural
             visualization and Interior Design
@@ -81,67 +81,37 @@
         </div>
       </section>
 
-      <!-- Stats Section -->
-      <div class="container">
-        <div class="stat-box">
-          <div class="stat-number">3D Artist</div>
-          <div class="stat-label">
-            Architectural, Interior, Home design, Lighting, Product design
-          </div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-number">Frontend</div>
-          <div class="stat-label">
-            Web developer, programmer, Web app, Software, three.js
-          </div>
-          <a
-            class="website"
-            href="https://frontend-3dartist.netlify.app/"
-            target="_blank"
-            >Website</a
-          >
-        </div>
-      </div>
-
       <!-- Skills Section -->
       <section id="skills">
         <h2>Skills</h2>
-        <div class="skills-container">
-          <button class="skill-btn">
-            <span class="material-icons">view_in_ar</span> 3D Modeling
-          </button>
-          <button class="skill-btn">
-            <span class="material-icons">image</span> 3D Rendering
-          </button>
-          <button class="skill-btn">
-            <span class="material-icons">palette</span> Texturing
-          </button>
-          <button class="skill-btn">
-            <span class="material-icons">home</span> Architectural
-          </button>
-          <button class="skill-btn">
-            <span class="material-icons">architecture</span> Sketchup 3D
-          </button>
-          <button class="skill-btn">
-            <span class="material-icons">design_services</span> Product Design
-          </button>
-          <button class="skill-btn">
-            <span class="material-icons">light</span> Lighting
-          </button>
-          <button class="skill-btn">
-            <span class="material-icons">view_quilt</span> 3dsMax & Vray
-          </button>
-          <button class="skill-btn">
-            <span class="material-icons">drafts</span> AutoCAD
-          </button>
-          <button class="skill-btn">
-            <span class="material-icons">photo_camera</span> Photoshop
-          </button>
-          <button class="skill-btn">
-            <span class="material-icons">code</span> Programming
-          </button>
-        </div>
+        <div class="skills-container" id="skillsContainer"></div>
       </section>
+
+      <script>
+        const skills = [
+          { icon: "view_in_ar", label: "3D Modeling" },
+          { icon: "image", label: "3D Rendering" },
+          { icon: "palette", label: "Texturing" },
+          { icon: "home", label: "Architectural" },
+          { icon: "architecture", label: "Sketchup 3D" },
+          { icon: "design_services", label: "Product Design" },
+          { icon: "light", label: "Lighting" },
+          { icon: "view_quilt", label: "3dsMax & Vray" },
+          { icon: "drafts", label: "AutoCAD" },
+          { icon: "photo_camera", label: "Photoshop" },
+          { icon: "code", label: "Programming" },
+          { icon: "home", label: "Interior design" },
+          { icon: "home", label: "Event & Theming" },
+        ];
+
+        const container = document.getElementById("skillsContainer");
+        skills.forEach(({ icon, label }) => {
+          const btn = document.createElement("button");
+          btn.className = "skill-btn";
+          btn.innerHTML = `<span class="material-icons">${icon}</span> ${label}`;
+          container.appendChild(btn);
+        });
+      </script>
 
       <!-- Gallery Section with 50 WebP Images -->
       <section id="gallery">
@@ -315,7 +285,7 @@
 
     <footer>
       <p>
-        &copy; 2025 Thyagaraja M 3D Artist Portfolio V1.0.0 All rights reserved.
+        &copy; 2025 Thyagaraja M 3D Artist Portfolio V1.0.1 All rights reserved.
       </p>
     </footer>
 
