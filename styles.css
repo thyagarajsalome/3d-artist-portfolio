@@ -102,6 +102,7 @@ main {
   width: auto;
   border-radius: 5px;
 }
+
 .container {
   display: flex;
   justify-content: space-around;
@@ -186,6 +187,7 @@ main {
   text-align: center;
 }
 #contact h2 {
+  color: white;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -203,9 +205,10 @@ main {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #1f1f1f;
+  background: white;
 }
 footer p {
+  color: #1f1f1f;
   font-size: 0.875rem;
 }
 @media (max-width: 768px) {
@@ -228,4 +231,22 @@ footer p {
   .menu-icon {
     display: block;
   }
+}
+
+.brand {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cw,
+h2 {
+  color: #1f1f1f;
+  font-size: 32px;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
