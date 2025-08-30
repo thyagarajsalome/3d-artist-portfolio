@@ -70,6 +70,7 @@ main {
   margin-bottom: 1rem;
 }
 #home .hero-content p {
+  line-height: 0.5px;
   font-size: 1.25rem;
   max-width: 600px;
   margin: 0 auto;
@@ -139,6 +140,7 @@ main {
   text-align: center;
 }
 #skills h2 {
+  color: white;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -168,6 +170,7 @@ main {
   text-align: center;
 }
 #gallery h2 {
+  color: white;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -205,7 +208,7 @@ main {
 footer {
   text-align: center;
   padding: 1rem;
-  background: white;
+  /* background: white; */
 }
 footer p {
   color: #1f1f1f;
@@ -231,22 +234,4 @@ footer p {
   .menu-icon {
     display: block;
   }
-}
-
-.brand {
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cw,
-h2 {
-  color: #1f1f1f;
-  font-size: 32px;
-  padding: 10px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
