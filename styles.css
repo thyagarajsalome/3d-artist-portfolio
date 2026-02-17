@@ -635,6 +635,8 @@ section {
   position: relative;
 }
 
+
+
 /* Alternate: odd = left, even = right */
 .tl-item:nth-child(odd) .tl-content  { grid-column: 1; text-align: right; }
 .tl-item:nth-child(odd) .tl-empty    { grid-column: 3; }
